@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #16210b;
+}
+h1{
+    background-color: wheat;
+    background-position: center;
+    text-align: center;
+}
+.u-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
+    position: relative;
+    animation-name: logu;
+    animation-duration: 10s;
+}
+.logo-tittle{
+    font-family: sans-serif;
+    margin-left: 20px;
+    font-size: 50px;
+    color: yellow;
+    font-weight: 400;
+}
+.logo-left{
+    border: 15px solid#ff0000;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    height: 65%;
+    position: relative;
+    top: 1px;
+    width: 85%;
+}
+.logo-right{
+    width: 150%;
+    height: 15%;
+    position: relative;
+    border: 15px solid#ff0000;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+@keyframes logu{
+    0% {background-color: rgb(251, 255, 0); 
+        transform: scale(.5) rotate(0deg)
+    }
+    50%{background-color: rgb(255, 0, 255);
+        transform: scale(1.5) rotate(405deg)
+    }
+    100% { background-color: rgb(21, 255, 0);
+        transform: scale(1.0) rotate(450deg)
+    }
+    
+
+}
